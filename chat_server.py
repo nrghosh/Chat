@@ -58,7 +58,6 @@ class ChatProxy():
             print("Item not found!")
             return -1
 
-
     def read_data(self, conn):
         raw_data = b''
         while True:
@@ -71,11 +70,9 @@ class ChatProxy():
                 data = data[msg_end :]
                 
                 return (msg[: msg_end]).encode('utf-8')
-
             except ValueError:
                 print("Value Error")
-                    
-            
+                     
         print("In read data")
 
         return data
