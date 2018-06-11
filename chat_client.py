@@ -40,7 +40,7 @@ class ChatClient:
         return ("message_size: " + size + "sizeflag username: " + name + "endflag end_header" + data).encode("utf-8") 
 
     def find_thing(self, msg, thing, end):
-        # Utility function: find an element of a message such as a username or size
+        # Utility function: find an element of a message
         try:
             front_thing = msg.find(thing)
             end_thing = front_thing + len(thing)
