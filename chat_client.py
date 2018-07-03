@@ -74,8 +74,7 @@ class ChatClient:
                     print(user + ": " + msg[msg_start: msg_end])
                 data = data[msg_end :]
             except ValueError:
-                print("Value Error")
-                    
+                print("Value Error")                  
         print("In read sock")
 
 def main():
