@@ -1,13 +1,8 @@
-#
-# COMP 332, Spring 2018
 # Chat client
-
-# Nikhil Ghosh
 
 import socket
 import sys
 import threading
-
 
 class ChatClient:
 
@@ -37,7 +32,8 @@ class ChatClient:
         size = str(len(data))
         name = self.name
         # Use string flags for later on (to isolate size, username, etc)
-        return ("message_size: " + size + "sizeflag username: " + name + "endflag end_header" + data).encode("utf-8") 
+        return ("message_size: " + size + "sizeflag username: " + name + 
+        "endflag end_header" + data).encode("utf-8") 
 
     def find_thing(self, msg, thing, end):
         # Utility function: find an element of a message
